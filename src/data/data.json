@@ -1,0 +1,39 @@
+
+{
+    "contact": {
+      "title": "CONTACT US",
+      "phone": {
+        "label": "Phone:",
+        "value": "02633555886"
+      },
+      "email": {
+        "label": "Email:",
+        "value": "vnadmin@ezequote.com.au"
+      }
+    },
+    "headOffice": {
+      "title": "HEAD OFFICE",
+      "street": "399 Hai Bà Trưng Street",
+      "ward": "6 Ward",
+      "city": "Da Lat City"
+    },
+    "openingHours": {
+      "title": "OPENING HOURS",
+      "open": "Mon-Fri: 06:30a.m. - 03:30p.m.",
+      "sat": "Sat: CLOSED",
+      "sun": "Sun: CLOSED"
+    },
+    "footer": {
+        "title": "BACK TO TOP",
+        "copyright": "©️2023 . All Rights Reserved",
+        "design": "Site designed by Anh Hoàng"
+    },
+    "homePage": {
+        "home": "HOME",
+        "ede": "EDE",
+        "teams": "TEAM",
+        "active": "ACTIVITY",
+        "download": "SOFTWARE",
+        "contact": "ABOUT"
+    }
+  }

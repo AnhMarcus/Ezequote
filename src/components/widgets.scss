@@ -1,0 +1,71 @@
+
+
+.box-container {
+    background-color: #072253;
+    padding: 20px 0;
+
+    /* Container chính */
+    .box {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #072253;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        /* Flex container cho các items */
+        .items {
+            display: flex;
+            justify-content: space-between;
+            // flex-wrap: wrap;
+            flex-wrap: nowrap;
+
+            /* Mỗi item trong container */
+            .item {
+                flex: 1 1 30%;
+                margin: 10px;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                box-sizing: border-box;
+
+                /* Tiêu đề của mỗi item */
+                h3 {
+                    font-size: 18px;
+                    color: #333;
+                    margin-bottom: 15px;
+                    padding-bottom: 10px;
+                    border-bottom: 2px solid #007BFF;
+                    /* border-bottom: 2px solid #4285F4; */
+                }
+
+                /* Các thẻ h4 trong item */
+                h4.contact {
+                    font-size: 16px;
+                    color: #555;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                }
+
+                /* Các đoạn văn bản trong item */
+                p {
+                    font-size: 14px;
+                    color: #777;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
+
+/* Responsive design cho các thiết bị nhỏ hơn */
+@media (max-width: 768px) {
+    .items {
+        flex-direction: column;
+    }
+
+    .item {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}

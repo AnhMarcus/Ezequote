@@ -1,0 +1,194 @@
+.my-account {
+  display: flex;
+  justify-content: center;
+  padding: 94px;
+
+  .account-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 0;
+        cursor: pointer;
+        font-size: 16px;
+
+        a.active {
+          font-weight: bold;
+          color: #2185d0;
+          background-color: #f0f8ff;
+          border-left: 4px solid #2185d0;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 12px 0;
+        }
+
+        i.icon {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .account-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-right: 200px;
+
+    .profile-info {
+      background: #fff;
+      padding: 30px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+
+      h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #222;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 25px;
+        color: #666;
+      }
+
+      .form-layout {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .form-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .items {
+          display: flex;
+          align-items: center; /* Align all form items in a row */
+          gap: 20px;
+
+          label {
+            width: 150px;
+            font-weight: 500;
+            text-align: left;
+            margin-top: 5px; /* Adjust the top margin */
+          }
+
+          .ui.input,
+          .ui.checkbox {
+            flex: 1;
+          }
+
+          input {
+            height: 40px;
+            width: 100%;
+            padding: 0 24px;
+            box-sizing: border-box; /* Ensure padding does not affect width */
+          }
+
+          .gender-options {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            label {
+              padding-top: 0 !important; /* Remove padding for radio labels */
+            }
+          }
+        }
+
+        button {
+          margin-top: 10px;
+          align-self: center;
+        }
+      }
+
+      .avatar-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        img {
+          border-radius: 50%;
+          border: 1px solid #ddd;
+        }
+      }
+    }
+  }
+
+  // Datepicker override
+  .date-picker-wrapper {
+    .react-datepicker-wrapper {
+      width: 100%;
+    }
+
+    input {
+      padding-left: 38px; // Space for the icon
+    }
+
+    .react-datepicker__input-container {
+      position: relative;
+
+      svg {
+        position: absolute;
+        left: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #2185d0;
+      }
+    }
+  }
+
+  // Input wrapper with error message
+
+  .error-message {
+    padding: 6px 0;
+    color: #db2828;
+    font-size: 13px;
+    line-height: 1.4;
+    position: relative;
+    right: 223px;
+    top: 45px;
+  }
+
+  // Custom radio styling
+  .custom-radio {
+    .ui.radio {
+      display: flex;
+      align-items: center; /* Align radio button with the label */
+
+      label {
+        margin-left: 8px; /* Add space between radio and label */
+        cursor: pointer; /* Ensure the label is clickable */
+        padding: 0;
+      }
+    }
+  }
+}
+
+// .account-sidebar ul li.active {
+//   font-weight: bold;
+//   color: #2185d0; /* Semantic UI primary color */
+//   background-color: #f0f8ff; /* light blue background */
+//   border-left: 4px solid #2185d0;
+// }

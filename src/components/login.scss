@@ -1,0 +1,206 @@
+// Biến toàn cục
+$colors: (
+  primary: #4361ee,
+  secondary: #3f37c9,
+  text: #2b2d42,
+  light-gray: #f8f9fa,
+  white: #ffffff,
+  gray: #6c757d
+);
+
+$shadows: (
+  base: 0 10px 20px rgba(0,0,0,0.1),
+  button: 0 5px 15px rgba(63, 55, 201, 0.3),
+  input-focus: 0 0 0 3px rgba(67, 97, 238, 0.2)
+);
+
+$transitions: (
+  base: all 0.3s ease,
+  opacity: opacity 0.3s,
+  transform: transform 0.3s
+);
+
+// Mixins tái sử dụng
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-style {
+  background: map-get($colors, white);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: map-get($shadows, base);
+  transition: map-get($transitions, base);
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@mixin input-style {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: map-get($transitions, base);
+  background-color: map-get($colors, light-gray);
+  
+  &:focus {
+    border-color: map-get($colors, primary);
+    box-shadow: map-get($shadows, input-focus);
+    outline: none;
+    background-color: map-get($colors, white);
+  }
+}
+
+@mixin button-style {
+  width: 100%;
+  padding: 14px;
+  background: map-get($colors, primary);
+  color: map-get($colors, white);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: map-get($transitions, base);
+  
+  &:hover {
+    background: map-get($colors, secondary);
+    transform: translateY(-2px);
+    box-shadow: map-get($shadows, button);
+  }
+}
+
+// Reset và base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+// Layout chính
+.login-container {
+  min-height: 100vh;
+  flex: 1;
+  @include flex-center;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  .login-card {
+    width: 400px;
+    @include card-style;
+    
+    @media (max-width: 480px) {
+      padding: 30px 20px;
+    }
+  }
+}
+
+// Các thành phần
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+  
+  h2 {
+    color: map-get($colors, text);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    color: map-get($colors, gray);
+    font-size: 14px;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: map-get($colors, text);
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  input {
+    @include input-style;
+  }
+
+  .error-text {
+    color: #ff4d4f;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    text-align: justify;
+  }  
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: map-get($transitions, opacity);
+  
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: map-get($colors, gray);
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: map-get($colors, primary);
+  text-decoration: none;
+  transition: map-get($transitions, opacity);
+  
+  &:hover {
+    color: map-get($colors, secondary);
+    text-decoration: underline;
+  }
+}
+
+.login-btn {
+  @include button-style;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 20px;
+  color: map-get($colors, gray);
+  font-size: 14px;
+  
+  a {
+    color: map-get($colors, primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: map-get($transitions, opacity);
+    
+    &:hover {
+      color: map-get($colors, secondary);
+      text-decoration: underline;
+    }
+  }
+}

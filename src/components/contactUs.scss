@@ -1,0 +1,55 @@
+
+
+.contact-form {
+  top: 0;
+  left: 0;
+  width: 100vw; /* Chiếm full viewport width */
+  height: 100vh; /* Chiếm full viewport height */
+  background-color: #08314A; /* Màu nền phù hợp với thiết kế */
+  padding-top: 50px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Bỏ viền iframe */
+    display: block; /* Loại bỏ khoảng trắng dưới iframe */
+  }
+}
+
+.iframe-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 10px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Responsive */
+@media (min-width: 768px) {
+  .image-container {
+    height: 60vh; /* Trên desktop, hình ảnh có thể cao hơn */
+  }
+
+  .text-overlay {
+    width: 50%;
+  }
+}

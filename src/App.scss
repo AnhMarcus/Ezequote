@@ -1,0 +1,242 @@
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f8f9fa; /* Màu nền của header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ để tạo độ sâu */
+    padding: 20px;
+    padding-top: 0px;
+    flex-shrink: 0;
+
+    .custom-action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #08314a;
+      color: white;
+      overflow: hidden; /* Ẩn phần chữ chạy ra khỏi khung */
+      white-space: nowrap; /* Ngăn chữ xuống dòng */
+      margin-left: -20px;
+      margin-right: -20px;
+      box-sizing: border-box;
+
+      .navigation {
+        flex-grow: 1; /* Navigation chiếm phần còn lại của không gian */
+        overflow: hidden; /* Ẩn phần chữ chạy ra khỏi khung */
+
+        ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          animation: scrollText 20s linear infinite; /* Hiệu ứng chạy chữ */
+
+          li {
+            margin-right: 20px; /* Khoảng cách giữa các mục */
+          }
+        }
+      }
+    }
+
+    .sub_header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 20px; /* Điều chỉnh khoảng cách giữa action bar và sub_header */
+      height: 13px; /* hoặc bất kỳ giá trị nào bạn muốn */
+      min-height: 5px; /* đảm bảo chiều cao tối thiểu */
+      align-items: center; /* căn giữa các phần tử theo chiều dọc */
+
+      .navigation-menu-bar {
+        ul {
+          background-color: white;
+        }
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+
+        li {
+          display: inline;
+          margin: 0 10px;
+
+          .teams {
+            input.search,
+            .divider.text {
+              cursor: pointer !important;
+            }
+
+            .menu {
+              width: 200px !important;
+            }
+
+            i.users.icon,
+            i.caret.square.right.outline.icon {
+              float: left;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        .user-dropdown.ui.dropdown {
+          i.dropdown.icon {
+            margin: 5px !important;
+          }
+          .menu {
+            min-width: 180px;
+            margin-top: 5px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            .item {
+              padding: 10px 16px;
+              font-weight: 500;
+              transition: all 0.2s ease;
+
+              &:hover {
+                background-color: #f4f4f4;
+                color: #2185d0;
+              }
+
+              i.icon {
+                margin-right: 10px;
+                color: #2185d0;
+              }
+            }
+          }
+        }
+
+        li.home a {
+          color: blue;
+          text-decoration: none;
+        }
+      }
+
+      img#logo {
+        width: 16%;
+        float: left;
+      }
+    }
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
+  .footer {
+    flex-shrink: 0; /* Ngăn footer co lại */
+  }
+}
+
+//Responsive
+@media (max-width: 768px) {
+  .action-bar {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .navigation ul {
+    flex-direction: row;
+    top: 0;
+    position: relative;
+  }
+
+  .navigation ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .sub_header {
+    img {
+      width: 40% !important;
+    }
+  }
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%); /* Bắt đầu từ bên phải */
+  }
+  100% {
+    transform: translateX(-100%); /* Kết thúc ở bên trái */
+  }
+}
+
+/* Button toggle: Ẩn trên desktop, hiển thị trên mobile */
+.menu-toggle {
+  display: none; /* Ẩn mặc định */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Navigation menu bar: Hiển thị trên desktop */
+.navigation-menu-bar {
+  display: flex; /* Hiển thị bình thường trên desktop */
+  font-size: 19px;
+}
+
+.navigation-menu-bar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.navigation-menu-bar ul li {
+  display: inline;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Hiển thị button toggle trên mobile */
+  }
+
+  .navigation-menu-bar {
+    display: none; /* Ẩn menu mặc định trên mobile */
+    position: absolute;
+    top: 116px; /* Điều chỉnh vị trí menu */
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Màu nền của menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+    z-index: 1000; /* Đảm bảo menu hiển thị trên các phần tử khác */
+  }
+
+  .navigation-menu-bar.open {
+    display: block; /* Hiển thị menu khi có class "open" */
+  }
+
+  .navigation-menu-bar ul {
+    flex-direction: column; /* Xếp các mục menu theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các mục menu */
+    padding: 10px; /* Thêm padding cho menu */
+    font-size: 14px;
+  }
+
+  .navigation-menu-bar ul li {
+    display: block; /* Hiển thị các mục menu dưới dạng block */
+    text-align: center; /* Căn giữa văn bản */
+  }
+
+  .teams .menu {
+    width: 100% !important; /* Đảm bảo dropdown chiếm toàn bộ chiều rộng */
+  }
+}

@@ -1,0 +1,1979 @@
+{
+  "Version": 1,
+  "Hash": "Jz1ee3aFsqehs/OYe6CaeSij61LjJIxBJUIHuoFQIZA=",
+  "Source": "BE",
+  "BasePath": "_content/BE",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BE\\wwwroot",
+      "Source": "BE",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\076f2f2c-be00-41e1-acec-f0f2d6bae224.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/076f2f2c-be00-41e1-acec-f0f2d6bae224#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\076f2f2c-be00-41e1-acec-f0f2d6bae224.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\17a23f1d-7603-4cb5-9fd1-351458705dd5.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/17a23f1d-7603-4cb5-9fd1-351458705dd5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\17a23f1d-7603-4cb5-9fd1-351458705dd5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\1aa3b322-4341-4769-b4fc-653b5e15db34.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/1aa3b322-4341-4769-b4fc-653b5e15db34#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\1aa3b322-4341-4769-b4fc-653b5e15db34.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\307a954f-5e35-4380-8fbb-3a9c5e985d71.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/307a954f-5e35-4380-8fbb-3a9c5e985d71#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\307a954f-5e35-4380-8fbb-3a9c5e985d71.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\53ff4764-2a6d-47ed-bb8f-88b0bbccdb7b.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/53ff4764-2a6d-47ed-bb8f-88b0bbccdb7b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\53ff4764-2a6d-47ed-bb8f-88b0bbccdb7b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\56922a50-a6cf-4a2b-b8f4-047a6e4cf8ff.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/56922a50-a6cf-4a2b-b8f4-047a6e4cf8ff#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\56922a50-a6cf-4a2b-b8f4-047a6e4cf8ff.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\5f9cc032-f70c-4ccb-8033-be60363ba5f3.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/5f9cc032-f70c-4ccb-8033-be60363ba5f3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\5f9cc032-f70c-4ccb-8033-be60363ba5f3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\87ece9b5-f4fb-4897-a413-39ef49afa36e.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/87ece9b5-f4fb-4897-a413-39ef49afa36e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\87ece9b5-f4fb-4897-a413-39ef49afa36e.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\9ea532ca-ba82-449c-a25d-b1a4a966e220.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/9ea532ca-ba82-449c-a25d-b1a4a966e220#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9ea532ca-ba82-449c-a25d-b1a4a966e220.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\a9c6344c-3336-43a8-8a71-ec5697206027.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/a9c6344c-3336-43a8-8a71-ec5697206027#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a9c6344c-3336-43a8-8a71-ec5697206027.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\b531200e-fc50-4a1a-a1c5-dd7ead7fce20.png",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/b531200e-fc50-4a1a-a1c5-dd7ead7fce20#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q2w8ed9ics",
+      "Integrity": "YoYrnTBzHM1TknypgfnW5RCSCaXflBLqgVgkrTOrcVY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\b531200e-fc50-4a1a-a1c5-dd7ead7fce20.png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\bd8e7897-54ba-4ee8-9bbd-57995da0d788.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/bd8e7897-54ba-4ee8-9bbd-57995da0d788#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\bd8e7897-54ba-4ee8-9bbd-57995da0d788.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\cef866fa-e9f7-4758-bffc-8801deb86a0f.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/cef866fa-e9f7-4758-bffc-8801deb86a0f#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\cef866fa-e9f7-4758-bffc-8801deb86a0f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\dc189a21-f581-4e7e-958e-2fd9c82fe064.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/dc189a21-f581-4e7e-958e-2fd9c82fe064#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\dc189a21-f581-4e7e-958e-2fd9c82fe064.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\e8ba39bf-97ca-4481-a95d-8a4de801525c.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/e8ba39bf-97ca-4481-a95d-8a4de801525c#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rq2f20iqe5",
+      "Integrity": "XWIuZAaQVMauqf+m/4iwrnNn6JVgsAjlo8h7XwiHAVQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\e8ba39bf-97ca-4481-a95d-8a4de801525c.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f3ea9615-5acd-4b8d-b62b-60ce35ce0a5d.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/f3ea9615-5acd-4b8d-b62b-60ce35ce0a5d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f3ea9615-5acd-4b8d-b62b-60ce35ce0a5d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f5693529-3ecf-415c-8636-f442fb32410c.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/f5693529-3ecf-415c-8636-f442fb32410c#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f5693529-3ecf-415c-8636-f442fb32410c.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f710ec04-af7e-4e3a-b227-cd6adff0a596.jpg",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/f710ec04-af7e-4e3a-b227-cd6adff0a596#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cewuyadonh",
+      "Integrity": "fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f710ec04-af7e-4e3a-b227-cd6adff0a596.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f948e77e-2d2f-4d28-a0da-34ecf3e4de8a.png",
+      "SourceId": "BE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\",
+      "BasePath": "_content/BE",
+      "RelativePath": "uploads/f948e77e-2d2f-4d28-a0da-34ecf3e4de8a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q2w8ed9ics",
+      "Integrity": "YoYrnTBzHM1TknypgfnW5RCSCaXflBLqgVgkrTOrcVY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f948e77e-2d2f-4d28-a0da-34ecf3e4de8a.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/076f2f2c-be00-41e1-acec-f0f2d6bae224.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\076f2f2c-be00-41e1-acec-f0f2d6bae224.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 02:18:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/076f2f2c-be00-41e1-acec-f0f2d6bae224.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/076f2f2c-be00-41e1-acec-f0f2d6bae224.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\076f2f2c-be00-41e1-acec-f0f2d6bae224.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 02:18:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/17a23f1d-7603-4cb5-9fd1-351458705dd5.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\17a23f1d-7603-4cb5-9fd1-351458705dd5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:04:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/17a23f1d-7603-4cb5-9fd1-351458705dd5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/17a23f1d-7603-4cb5-9fd1-351458705dd5.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\17a23f1d-7603-4cb5-9fd1-351458705dd5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:04:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/1aa3b322-4341-4769-b4fc-653b5e15db34.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\1aa3b322-4341-4769-b4fc-653b5e15db34.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:21:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/1aa3b322-4341-4769-b4fc-653b5e15db34.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/1aa3b322-4341-4769-b4fc-653b5e15db34.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\1aa3b322-4341-4769-b4fc-653b5e15db34.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:21:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/307a954f-5e35-4380-8fbb-3a9c5e985d71.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\307a954f-5e35-4380-8fbb-3a9c5e985d71.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:15:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/307a954f-5e35-4380-8fbb-3a9c5e985d71.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/307a954f-5e35-4380-8fbb-3a9c5e985d71.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\307a954f-5e35-4380-8fbb-3a9c5e985d71.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:15:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/53ff4764-2a6d-47ed-bb8f-88b0bbccdb7b.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\53ff4764-2a6d-47ed-bb8f-88b0bbccdb7b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 04:17:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/53ff4764-2a6d-47ed-bb8f-88b0bbccdb7b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/53ff4764-2a6d-47ed-bb8f-88b0bbccdb7b.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\53ff4764-2a6d-47ed-bb8f-88b0bbccdb7b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 04:17:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/56922a50-a6cf-4a2b-b8f4-047a6e4cf8ff.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\56922a50-a6cf-4a2b-b8f4-047a6e4cf8ff.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 02:54:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/56922a50-a6cf-4a2b-b8f4-047a6e4cf8ff.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/56922a50-a6cf-4a2b-b8f4-047a6e4cf8ff.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\56922a50-a6cf-4a2b-b8f4-047a6e4cf8ff.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 02:54:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/5f9cc032-f70c-4ccb-8033-be60363ba5f3.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\5f9cc032-f70c-4ccb-8033-be60363ba5f3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:18:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/5f9cc032-f70c-4ccb-8033-be60363ba5f3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/5f9cc032-f70c-4ccb-8033-be60363ba5f3.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\5f9cc032-f70c-4ccb-8033-be60363ba5f3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:18:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/87ece9b5-f4fb-4897-a413-39ef49afa36e.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\87ece9b5-f4fb-4897-a413-39ef49afa36e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:19:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/87ece9b5-f4fb-4897-a413-39ef49afa36e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/87ece9b5-f4fb-4897-a413-39ef49afa36e.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\87ece9b5-f4fb-4897-a413-39ef49afa36e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:19:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9ea532ca-ba82-449c-a25d-b1a4a966e220.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\9ea532ca-ba82-449c-a25d-b1a4a966e220.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 02:25:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9ea532ca-ba82-449c-a25d-b1a4a966e220.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9ea532ca-ba82-449c-a25d-b1a4a966e220.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\9ea532ca-ba82-449c-a25d-b1a4a966e220.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 02:25:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a9c6344c-3336-43a8-8a71-ec5697206027.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\a9c6344c-3336-43a8-8a71-ec5697206027.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:28:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a9c6344c-3336-43a8-8a71-ec5697206027.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a9c6344c-3336-43a8-8a71-ec5697206027.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\a9c6344c-3336-43a8-8a71-ec5697206027.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:28:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b531200e-fc50-4a1a-a1c5-dd7ead7fce20.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\b531200e-fc50-4a1a-a1c5-dd7ead7fce20.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YoYrnTBzHM1TknypgfnW5RCSCaXflBLqgVgkrTOrcVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 02:55:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YoYrnTBzHM1TknypgfnW5RCSCaXflBLqgVgkrTOrcVY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b531200e-fc50-4a1a-a1c5-dd7ead7fce20.q2w8ed9ics.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\b531200e-fc50-4a1a-a1c5-dd7ead7fce20.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YoYrnTBzHM1TknypgfnW5RCSCaXflBLqgVgkrTOrcVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 02:55:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q2w8ed9ics"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/b531200e-fc50-4a1a-a1c5-dd7ead7fce20.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YoYrnTBzHM1TknypgfnW5RCSCaXflBLqgVgkrTOrcVY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bd8e7897-54ba-4ee8-9bbd-57995da0d788.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\bd8e7897-54ba-4ee8-9bbd-57995da0d788.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:02:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/bd8e7897-54ba-4ee8-9bbd-57995da0d788.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bd8e7897-54ba-4ee8-9bbd-57995da0d788.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\bd8e7897-54ba-4ee8-9bbd-57995da0d788.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:02:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/cef866fa-e9f7-4758-bffc-8801deb86a0f.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\cef866fa-e9f7-4758-bffc-8801deb86a0f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:09:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/cef866fa-e9f7-4758-bffc-8801deb86a0f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/cef866fa-e9f7-4758-bffc-8801deb86a0f.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\cef866fa-e9f7-4758-bffc-8801deb86a0f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:09:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/dc189a21-f581-4e7e-958e-2fd9c82fe064.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\dc189a21-f581-4e7e-958e-2fd9c82fe064.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:14:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/dc189a21-f581-4e7e-958e-2fd9c82fe064.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/dc189a21-f581-4e7e-958e-2fd9c82fe064.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\dc189a21-f581-4e7e-958e-2fd9c82fe064.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:14:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e8ba39bf-97ca-4481-a95d-8a4de801525c.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\e8ba39bf-97ca-4481-a95d-8a4de801525c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "350675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XWIuZAaQVMauqf+m/4iwrnNn6JVgsAjlo8h7XwiHAVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:18:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XWIuZAaQVMauqf+m/4iwrnNn6JVgsAjlo8h7XwiHAVQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e8ba39bf-97ca-4481-a95d-8a4de801525c.rq2f20iqe5.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\e8ba39bf-97ca-4481-a95d-8a4de801525c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "350675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XWIuZAaQVMauqf+m/4iwrnNn6JVgsAjlo8h7XwiHAVQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:18:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rq2f20iqe5"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/e8ba39bf-97ca-4481-a95d-8a4de801525c.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XWIuZAaQVMauqf+m/4iwrnNn6JVgsAjlo8h7XwiHAVQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f3ea9615-5acd-4b8d-b62b-60ce35ce0a5d.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f3ea9615-5acd-4b8d-b62b-60ce35ce0a5d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 02:52:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f3ea9615-5acd-4b8d-b62b-60ce35ce0a5d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f3ea9615-5acd-4b8d-b62b-60ce35ce0a5d.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f3ea9615-5acd-4b8d-b62b-60ce35ce0a5d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 02:52:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f5693529-3ecf-415c-8636-f442fb32410c.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f5693529-3ecf-415c-8636-f442fb32410c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:13:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f5693529-3ecf-415c-8636-f442fb32410c.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f5693529-3ecf-415c-8636-f442fb32410c.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f5693529-3ecf-415c-8636-f442fb32410c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:13:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f710ec04-af7e-4e3a-b227-cd6adff0a596.cewuyadonh.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f710ec04-af7e-4e3a-b227-cd6adff0a596.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:24:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cewuyadonh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f710ec04-af7e-4e3a-b227-cd6adff0a596.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f710ec04-af7e-4e3a-b227-cd6adff0a596.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f710ec04-af7e-4e3a-b227-cd6adff0a596.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 04:24:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGbjNOxzvbGBkzBjEjOULCL6MbGREyfM42mGA8Hpf7w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f948e77e-2d2f-4d28-a0da-34ecf3e4de8a.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f948e77e-2d2f-4d28-a0da-34ecf3e4de8a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YoYrnTBzHM1TknypgfnW5RCSCaXflBLqgVgkrTOrcVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:21:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YoYrnTBzHM1TknypgfnW5RCSCaXflBLqgVgkrTOrcVY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f948e77e-2d2f-4d28-a0da-34ecf3e4de8a.q2w8ed9ics.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\Ezequote\\ezequote\\BE\\BE\\wwwroot\\uploads\\f948e77e-2d2f-4d28-a0da-34ecf3e4de8a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YoYrnTBzHM1TknypgfnW5RCSCaXflBLqgVgkrTOrcVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 06:21:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q2w8ed9ics"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f948e77e-2d2f-4d28-a0da-34ecf3e4de8a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YoYrnTBzHM1TknypgfnW5RCSCaXflBLqgVgkrTOrcVY="
+        }
+      ]
+    }
+  ]
+}
