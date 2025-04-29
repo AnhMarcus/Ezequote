@@ -23,12 +23,31 @@ import AccountLayout from "./pages/AccountLayout";
 import ChangePassword from "./pages/ChangePassword";
 import Address from "./pages/Address";
 import ResetPasswordConfirm from "./components/ResetPasswordConfirm";
+import AdminAnnouncements from "./pages/AdminAnnouncements";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const userloginData = JSON.parse(Cookies.get("userloginData") || "{}")
-  const loginName = userloginData.firstName && userloginData.lastName ? `${userloginData.firstName} ${userloginData.lastName}` : ""
+  const [announcement, setAnnouncement] = useState([]);
+  const userloginData = JSON.parse(Cookies.get("userloginData") || "{}");
+  const loginName =
+  userloginData.role === "admin"
+    ? userloginData.firstName || userloginData.lastName || "Admin"
+    : `${userloginData.firstName || ""} ${userloginData.lastName || ""}`.trim();
+
+  const fetchAnnouncement = async () => {
+    try {
+      const response = await fetch("https://localhost:7283/api/Announcement");
+      const data = await response.json();
+      setAnnouncement(data);
+    } catch (error) {
+      console.error("Lỗi khi fetch announcement:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchAnnouncement(); // gọi khi lần đầu mở App
+  }, []);
 
   useEffect(() => {
     const getUsers = async () => {
@@ -56,6 +75,18 @@ const App = () => {
     setIsLoggedIn(!!user); // true nếu có cookie
   }, []);
 
+  useEffect(() => {
+    const handleAnnouncementUpdated = () => {
+      fetchAnnouncement(); // fetch lại khi admin có thay đổi
+    };
+  
+    window.addEventListener("announcement-updated", handleAnnouncementUpdated);
+    return () => {
+      window.removeEventListener("announcement-updated", handleAnnouncementUpdated);
+    };
+  }, []);
+  
+
   const renderDropdownItems = (options) =>
     options.map((option) => (
       <Dropdown.Item key={option.key} text={option.text} value={option.value} />
@@ -68,14 +99,12 @@ const App = () => {
           <div className="custom-action-bar">
             <nav className="navigation">
               <ul>
-                <li>
-                  <p>Ngày 21/04/2025 </p>
-                </li>
-                <li>
-                  <p>
-                    VP Lý Nam Đế cup điện 8h-13h, Buổi chiều làm binh thường
-                  </p>
-                </li>
+                {announcement.map((item) => (
+                  <li key={item.id}>
+                    <p>{item.title}</p>
+                    <p>{item.content}</p>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
@@ -83,10 +112,7 @@ const App = () => {
             <Link to="/">
               <img src={Ezequote_logo} alt="Ezequote_logo" id="logo" />
             </Link>
-            <button
-              className="menu-toggle"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
+            <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
               <Icon name="bars" />
             </button>
             <nav className={`navigation-menu-bar ${menuOpen ? "open" : ""}`}>
@@ -101,14 +127,7 @@ const App = () => {
                   </a>
                 </li>
                 <li>
-                  <Dropdown
-                    className="teams"
-                    floating
-                    labeled
-                    icon="users"
-                    search
-                    text="TEAM"
-                  >
+                  <Dropdown className="teams" floating labeled icon="users" search text="TEAM">
                     <Dropdown.Menu>
                       {isLoggedIn ? (
                         renderDropdownItems(teamsOptions)
@@ -122,14 +141,7 @@ const App = () => {
                   </Dropdown>
                 </li>
                 <li>
-                  <Dropdown
-                    className="teams"
-                    floating
-                    labeled
-                    icon="caret square right outline"
-                    search
-                    text="ACTIVITY"
-                  >
+                  <Dropdown className="teams" floating labeled icon="caret square right outline" search text="ACTIVITY">
                     <Dropdown.Menu>
                       {isLoggedIn ? (
                         renderDropdownItems(activeOptions)
@@ -143,24 +155,16 @@ const App = () => {
                   </Dropdown>
                 </li>
                 <li>
-                  <Icon name="download" />
-                  {data.homePage.download}
+                  <Icon name="download" />{data.homePage.download}
                 </li>
                 <li>
                   <a href="/tuyendung" rel="noopener noreferrer">
-                    <Icon name="bell" />
-                    {data.homePage.contact}
+                    <Icon name="bell" />{data.homePage.contact}
                   </a>
                 </li>
                 <li>
                   {isLoggedIn ? (
-                    <Dropdown
-                      className="user-dropdown"
-                      floating
-                      labeled
-                      search
-                      text={`Hi! ${loginName}`}
-                    >
+                    <Dropdown className="user-dropdown" floating labeled search text={`Hi! ${loginName}`}>
                       <Dropdown.Menu>
                         <Dropdown.Item
                           as={Link}
@@ -180,9 +184,7 @@ const App = () => {
                       </Dropdown.Menu>
                     </Dropdown>
                   ) : (
-                    <a href="/login" rel="noopener noreferrer">
-                      LOGIN
-                    </a>
+                    <a href="/login" rel="noopener noreferrer">LOGIN</a>
                   )}
                 </li>
               </ul>
@@ -192,19 +194,12 @@ const App = () => {
 
         <main>
           <Routes>
-            <Route
-              path="/"
+            <Route path="/"
               element={
                 <>
                   <Slider>
                     {images.map((image, index) => {
-                      return (
-                        <img
-                          key={index}
-                          src={image.imgURL}
-                          alt={image.imgAlt}
-                        />
-                      );
+                      return (<img key={index} src={image.imgURL} alt={image.imgAlt}/>);
                     })}
                   </Slider>
                   <WidgetsComponent />
@@ -217,12 +212,10 @@ const App = () => {
             <Route path="signup" element={<SignUp />} />
             <Route path="password_reset" element={<PasswordReset />} />
             <Route path="/confirm-password-reset" element={<ResetPasswordConfirm />}/>
+            <Route path="/admin/announcements" element={<AdminAnnouncements />}/>
             <Route path="/account" element={<AccountLayout />}>
               <Route path="/account/profile" element={<Profile />} />
-              <Route
-                path="/account/change-password"
-                element={<ChangePassword />}
-              />
+              <Route path="/account/change-password" element={<ChangePassword />}/>
               <Route path="/account/address" element={<Address />} />
             </Route>
           </Routes>

@@ -1,4 +1,3 @@
-
 .App {
   text-align: center;
   display: flex;
@@ -34,7 +33,6 @@
         overflow: hidden; /* Ẩn phần chữ chạy ra khỏi khung */
 
         ul {
-          display: flex;
           list-style: none;
           margin: 0;
           padding: 0;
@@ -42,6 +40,13 @@
 
           li {
             margin-right: 20px; /* Khoảng cách giữa các mục */
+            display: inline;
+            p {
+              display: inline;
+              margin: 0;
+              font-size: 1rem;
+              padding: 0 10px;
+            }
           }
         }
       }

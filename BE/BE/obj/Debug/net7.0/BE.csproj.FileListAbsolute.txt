@@ -86,3 +86,7 @@ C:\Users\ADMIN\Desktop\Ezequote\ezequote\BE\BE\bin\Debug\net7.0\runtimes\win\lib
 C:\Users\ADMIN\Desktop\Ezequote\ezequote\BE\BE\bin\Debug\net7.0\user_marcus@gmail.com.json
 C:\Users\ADMIN\Desktop\Ezequote\ezequote\BE\BE\bin\Debug\net7.0\user_tomjr@gmail.com.json
 C:\Users\ADMIN\Desktop\Ezequote\ezequote\BE\BE\bin\Debug\net7.0\user_anhhnctk42@gmail.com.json
+C:\Users\ADMIN\Desktop\Ezequote\ezequote\BE\BE\obj\Debug\net7.0\BE.sourcelink.json
+C:\Users\ADMIN\Desktop\Ezequote\ezequote\BE\BE\bin\Debug\net7.0\user_tomm@gmail.com.json
+C:\Users\ADMIN\Desktop\Ezequote\ezequote\BE\BE\bin\Debug\net7.0\user_Paul@ezequote.com.au.json
+C:\Users\ADMIN\Desktop\Ezequote\ezequote\BE\BE\bin\Debug\net7.0\user_paul@gmail.com.json

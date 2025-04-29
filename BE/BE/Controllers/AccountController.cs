@@ -40,6 +40,10 @@ namespace BE.Controllers
             var captchaJson = await captchaResponse.Content.ReadAsStringAsync();
             Console.WriteLine("Captcha response từ Google: " + captchaJson);
             var captchaResult = JsonSerializer.Deserialize<RecaptchaResponse>(captchaJson);
+            Console.WriteLine("🔍 CAPTCHA kết quả:");
+            Console.WriteLine($"  ✔ Success: {captchaResult.Success}");
+            Console.WriteLine($"  🌐 Hostname: {captchaResult.Hostname ?? "(null)"}");
+            Console.WriteLine($"  ⏰ ChallengeTs: {captchaResult.ChallengeTs}");
             if (!captchaResult.Success)
             {
                 return BadRequest(new { success = false, message = "Invalid captcha" });

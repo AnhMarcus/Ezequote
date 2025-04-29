@@ -100,7 +100,7 @@ namespace BE.Controllers
             {
                 status = 1,
                 message = "Login successfully",
-                data = new { token, firstName = user.firstName, lastName = user.lastName, email = user.email }
+                data = new { token, firstName = user.firstName, lastName = user.lastName, email = user.email, role = user.role }
             });
         }
 
@@ -137,7 +137,8 @@ namespace BE.Controllers
                 email = newUser.email,
                 password = newUser.password,
                 firstName = newUser.firstName,
-                lastName = newUser.lastName
+                lastName = newUser.lastName,
+                role = "user"
             };
 
             _context.Users.Add(user);

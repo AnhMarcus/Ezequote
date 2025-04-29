@@ -19,6 +19,8 @@ namespace BE.DTO
 
         [Required]
         public string lastName { get; set; }
+        [Required]
+        public string role { get; set; } = "user"; // mặc định là "user"
 
     }
 }

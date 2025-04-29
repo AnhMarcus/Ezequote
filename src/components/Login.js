@@ -50,14 +50,18 @@ const Login = () => {
     });
     Cookies.set(
       "userloginData",
-      JSON.stringify({ token: resData.data.token, firstName: resData.data.firstName, lastName: resData.data.lastName, email: resData.data.email }),
+      JSON.stringify({ token: resData.data.token, firstName: resData.data.firstName, lastName: resData.data.lastName, email: resData.data.email, role: resData.data.role }),
       {
         expires: 1,
         sameSite: "Lax",
         secure: true,
       }
     );
-    window.location.pathname = "/";
+    if (resData.data.role === "admin") {
+      window.location.pathname = '/admin/announcements'
+    } else {
+      window.location.pathname = "/";
+    }
   };
 
   return (
