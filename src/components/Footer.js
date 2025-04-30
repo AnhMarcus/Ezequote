@@ -1,17 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-router-dom";
 import Ezequote_logo from "../Ezequote_logo.png";
-import '../components/footer.scss'
-import data from '../data/data.json'
+import "../components/footer.scss";
+import data from "../data/data.json";
+import { Icon } from "semantic-ui-react";
 
 function footer() {
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
   return (
     <footer class="footer">
@@ -30,12 +30,24 @@ function footer() {
             <div class="column half">
               <div class="image-wrapper">
                 <span class="image-wrap">
-                  <Link to='/'>
+                  <Link to="/">
                     <img class="footer-logo" src={Ezequote_logo} alt="logo" />
                   </Link>
                 </span>
               </div>
             </div>
+
+            <div class="column half center-align">
+              <div class="social-icons">
+                <a target="_blank" href="https://www.facebook.com/EzequoteVN/">
+                  <Icon name="facebook f" />
+                </a>
+                <a>
+                  <Icon name="linkedin" />
+                </a>
+              </div>
+            </div>
+
             <div class="column half last-child">
               <div class="text-wrapper right-align light-bg">
                 <div class="text-inner">

@@ -19,8 +19,8 @@ const teamsOptions = [
   ];
   
   const activeOptions = [
-    { key: "Thể thao", text: "Thể thao", value: "Thể thao" },
-    { key: "Thiện nguyện", text: "Thiện nguyện", value: "Thiện nguyện" },
+    { key: "Sport", text: "Sport", value: "activity/sport" },
+    { key: "Volunteer", text: "Volunteer", value: "activity/volunteer" },
   ];
   
   export { teamsOptions, activeOptions };

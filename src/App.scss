@@ -7,14 +7,17 @@
   .header {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    z-index: 1000;
-    background-color: #f8f9fa; /* Màu nền của header */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ để tạo độ sâu */
-    padding: 20px;
-    padding-top: 0px;
-    flex-shrink: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease,
+    box-shadow 0.3s ease;
+    background-color: transparent;
+    height: 70px;
+
+    &.scrolled {
+      background-color: cadetblue;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
     .custom-action-bar {
       display: flex;
@@ -27,6 +30,7 @@
       margin-left: -20px;
       margin-right: -20px;
       box-sizing: border-box;
+      
 
       .navigation {
         flex-grow: 1; /* Navigation chiếm phần còn lại của không gian */
@@ -63,7 +67,43 @@
 
       .navigation-menu-bar {
         ul {
-          background-color: white;
+          color: blue;
+
+          li {
+            i.dropdown.icon {
+              margin: 0px 0 0 6px !important;
+            }
+
+            .menu.transition.visible {
+              color: black;
+              a::after {
+                content: "";
+                width: 0%;
+              }
+            }
+          }
+
+          li a {
+            position: relative;
+            padding-bottom: 14px;
+            color: inherit;
+            text-decoration: none;
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 5px;
+              width: 0%;
+              background-color: #005ceb;
+              transition: width 0.3s ease;
+            }
+
+            &:hover::after {
+              width: 100%;
+            }
+          }
         }
       }
 
@@ -125,11 +165,6 @@
             }
           }
         }
-
-        li.home a {
-          color: blue;
-          text-decoration: none;
-        }
       }
 
       img#logo {
@@ -166,9 +201,14 @@
     margin-top: 10px;
   }
 
+  .ui.search.dropdown .menu {
+    max-height: 10.68571429rem;
+    top: 15px;
+  }
+
   .sub_header {
     img {
-      width: 40% !important;
+      width: 22% !important;
     }
   }
 }
@@ -195,6 +235,7 @@
 .navigation-menu-bar {
   display: flex; /* Hiển thị bình thường trên desktop */
   font-size: 19px;
+  font-weight: 600;
 }
 
 .navigation-menu-bar ul {
@@ -217,7 +258,7 @@
   .navigation-menu-bar {
     display: none; /* Ẩn menu mặc định trên mobile */
     position: absolute;
-    top: 116px; /* Điều chỉnh vị trí menu */
+    top: 69px; /* Điều chỉnh vị trí menu */
     left: 0;
     width: 100%;
     background-color: #f8f9fa; /* Màu nền của menu */

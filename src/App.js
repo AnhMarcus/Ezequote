@@ -24,16 +24,17 @@ import ChangePassword from "./pages/ChangePassword";
 import Address from "./pages/Address";
 import ResetPasswordConfirm from "./components/ResetPasswordConfirm";
 import AdminAnnouncements from "./pages/AdminAnnouncements";
+import ActivityDetail from "./pages/activity/ActivityDetail";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [announcement, setAnnouncement] = useState([]);
   const userloginData = JSON.parse(Cookies.get("userloginData") || "{}");
-  const loginName =
-  userloginData.role === "admin"
-    ? userloginData.firstName || userloginData.lastName || "Admin"
-    : `${userloginData.firstName || ""} ${userloginData.lastName || ""}`.trim();
+  const loginName = userloginData.role === "admin" ? userloginData.firstName || userloginData.lastName || "Admin" : 
+  `${userloginData.firstName || ""} ${userloginData.lastName || ""}`.trim();
+  const [scrolled, setScrolled] = useState(false);
+
 
   const fetchAnnouncement = async () => {
     try {
@@ -44,6 +45,15 @@ const App = () => {
       console.error("Lỗi khi fetch announcement:", error);
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // nếu scroll xuống quá 50px
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     fetchAnnouncement(); // gọi khi lần đầu mở App
@@ -79,13 +89,15 @@ const App = () => {
     const handleAnnouncementUpdated = () => {
       fetchAnnouncement(); // fetch lại khi admin có thay đổi
     };
-  
+
     window.addEventListener("announcement-updated", handleAnnouncementUpdated);
     return () => {
-      window.removeEventListener("announcement-updated", handleAnnouncementUpdated);
+      window.removeEventListener(
+        "announcement-updated",
+        handleAnnouncementUpdated
+      );
     };
   }, []);
-  
 
   const renderDropdownItems = (options) =>
     options.map((option) => (
@@ -95,7 +107,7 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <header className="header">
+        <header className={`header ${scrolled ? "scrolled" : ""}`}>
           <div className="custom-action-bar">
             <nav className="navigation">
               <ul>
@@ -109,9 +121,7 @@ const App = () => {
             </nav>
           </div>
           <div className="sub_header">
-            <Link to="/">
-              <img src={Ezequote_logo} alt="Ezequote_logo" id="logo" />
-            </Link>
+            <Link to="/"><img src={Ezequote_logo} alt="Ezequote_logo" id="logo" /></Link>
             <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
               <Icon name="bars" />
             </button>
@@ -121,46 +131,35 @@ const App = () => {
                   <Link to="/">{data.homePage.home}</Link>
                 </li>
                 <li>
-                  <a href="/ede" target="_blank" rel="noopener noreferrer">
-                    <Icon name="chart bar outline" />
-                    {data.homePage.ede}
+                  <a href="/ede" target="_blank" rel="noopener noreferrer">{data.homePage.ede}</a>
+                </li>
+                <li>
+                  <a>
+                    <Dropdown className="teams" floating labeled search text="TEAM">
+                      <Dropdown.Menu>
+                        {isLoggedIn ? (renderDropdownItems(teamsOptions)) : (
+                          <Dropdown.Item
+                            disabled
+                            text="Please login to view teams"
+                          />
+                        )}
+                      </Dropdown.Menu>
+                    </Dropdown>
                   </a>
                 </li>
                 <li>
-                  <Dropdown className="teams" floating labeled icon="users" search text="TEAM">
-                    <Dropdown.Menu>
-                      {isLoggedIn ? (
-                        renderDropdownItems(teamsOptions)
-                      ) : (
-                        <Dropdown.Item
-                          disabled
-                          text="Please login to view teams"
-                        />
-                      )}
-                    </Dropdown.Menu>
-                  </Dropdown>
-                </li>
-                <li>
-                  <Dropdown className="teams" floating labeled icon="caret square right outline" search text="ACTIVITY">
-                    <Dropdown.Menu>
-                      {isLoggedIn ? (
-                        renderDropdownItems(activeOptions)
-                      ) : (
-                        <Dropdown.Item
-                          disabled
-                          text="Please login to view activities"
-                        />
-                      )}
-                    </Dropdown.Menu>
-                  </Dropdown>
-                </li>
-                <li>
-                  <Icon name="download" />{data.homePage.download}
-                </li>
-                <li>
-                  <a href="/tuyendung" rel="noopener noreferrer">
-                    <Icon name="bell" />{data.homePage.contact}
+                  <a>
+                    <Dropdown className="teams" floating labeled search text="ACTIVITY">
+                      <Dropdown.Menu>
+                        {isLoggedIn ? (activeOptions.map((option) => (<Dropdown.Item key={option.key} as={Link} to={option.value} text={option.text}/>))) : 
+                          (<Dropdown.Item disabled text="Please login to view activities"/>)}
+                      </Dropdown.Menu>
+                    </Dropdown>
                   </a>
+                </li>
+                <li><a>{data.homePage.download}</a></li>
+                <li>
+                  <a href="/tuyendung" rel="noopener noreferrer">{data.homePage.contact}</a>
                 </li>
                 <li>
                   {isLoggedIn ? (
@@ -184,7 +183,9 @@ const App = () => {
                       </Dropdown.Menu>
                     </Dropdown>
                   ) : (
-                    <a href="/login" rel="noopener noreferrer">LOGIN</a>
+                    <a href="/login" rel="noopener noreferrer">
+                      LOGIN
+                    </a>
                   )}
                 </li>
               </ul>
@@ -199,7 +200,13 @@ const App = () => {
                 <>
                   <Slider>
                     {images.map((image, index) => {
-                      return (<img key={index} src={image.imgURL} alt={image.imgAlt}/>);
+                      return (
+                        <img
+                          key={index}
+                          src={image.imgURL}
+                          alt={image.imgAlt}
+                        />
+                      );
                     })}
                   </Slider>
                   <WidgetsComponent />
@@ -218,6 +225,7 @@ const App = () => {
               <Route path="/account/change-password" element={<ChangePassword />}/>
               <Route path="/account/address" element={<Address />} />
             </Route>
+            <Route path="/activity/:activityType" element={<ActivityDetail />} />
           </Routes>
         </main>
         <Footer />

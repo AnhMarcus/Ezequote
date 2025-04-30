@@ -1,0 +1,96 @@
+.activity-section {
+  display: flex;
+  flex-direction: column;
+
+  .activity-header {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    &.sport {
+      background-image: url("../../data/images/clients.jpg");
+    }
+    &.volunteer {
+      background-image: url("../../data/images/2021-01-22.webp");
+    }
+  }
+
+  .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // ✅ Mỗi hàng 3 cột
+    gap: 30px;
+    padding: 40px;
+    align-items: stretch; // ✅ Giúp card bằng nhau
+
+    .activity-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%; // ✅ Đảm bảo chiều cao đầy đủ
+      padding: 40px;
+    
+      &:hover {
+        transform: translateY(-5px);
+      }
+    
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // 2 ảnh mỗi dòng
+        gap: 2px;
+        grid-auto-rows: 90px;
+        overflow: hidden;
+        height: 180px;
+    
+        img {
+          width: 100%;
+          object-fit: cover;
+          display: block;
+          border-radius: 3px;
+          height: 250px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    
+        img:nth-last-child(1):nth-child(odd) {
+          grid-column: span 2;
+        }
+      }
+    
+      .activity-info {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+    
+        h2 {
+          font-size: 1rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+    
+        .date {
+          font-size: 0.9rem;
+          color: gray;
+          margin-bottom: 10px;
+        }
+    
+        .desc {
+          font-size: 0.95rem;
+          color: #333;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+

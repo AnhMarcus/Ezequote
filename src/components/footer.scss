@@ -1,86 +1,100 @@
-
-
 .footer {
-    font-family: Arial, sans-serif;
-    background-color: #072253;
-    color: #ecf0f1;
-    padding: 5px 0;
-    border-top: 5px solid #3498db;
+  font-family: Arial, sans-serif;
+  background-color: #072253;
+  color: #ecf0f1;
+  padding: 5px 0;
+  border-top: 5px solid #3498db;
 
-    /* Container chính */
-    .inner-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
+  /* Container chính */
+  .inner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 
-        /* Hàng chứa logo và văn bản */
-        .row:last-child {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .row {
-            .button {
-                cursor: pointer;
-
-                /* Nút BACK TO TOP */
-                &.light-bg {
-                    background-color: #3498db;
-                    color: #ffffff;
-                    padding: 10px 20px;
-                    font-size: 16px;
-                    border-radius: 5px;
-                    text-transform: uppercase;
-                    transition: background-color 0.3s ease;
-                    text-decoration: none;
-
-                    &:hover {
-                        background-color: #2980b9;
-                    }
-                }
-            }
-
-            .column.half:first-child {
-                text-align: left;
-            }
-              
-            .column.half:last-child {
-                text-align: right;
-            }
-
-            /* Hình ảnh logo */
-            .image-wrapper img {
-                max-width: 150px;
-                height: auto;
-            }
-
-            /* Văn bản trong footer */
-            .text-inner p {
-                font-size: 14px;
-                line-height: 1.6;
-                margin: 0;
-            }
-        }
+    /* Hàng chứa logo và văn bản */
+    .row:last-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
     }
-}
 
+    .row {
+      .button {
+        cursor: pointer;
+
+        /* Nút BACK TO TOP */
+        &.light-bg {
+          background-color: #3498db;
+          color: #ffffff;
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 5px;
+          text-transform: uppercase;
+          transition: background-color 0.3s ease;
+          text-decoration: none;
+
+          &:hover {
+            background-color: #2980b9;
+          }
+        }
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        font-size: 18px;
+        margin-top: 10px;
+      
+        a {
+          color: #ecf0f1;
+          transition: color 0.2s ease;
+      
+          &:hover {
+            color: #3498db;
+          }
+        }
+      }
+
+      .column.half:first-child {
+        text-align: left;
+      }
+
+      .column.half:last-child {
+        text-align: right;
+      }
+
+      /* Hình ảnh logo */
+      .image-wrapper img {
+        max-width: 150px;
+        height: auto;
+      }
+
+      /* Văn bản trong footer */
+      .text-inner p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+      }
+    }
+  }
+}
 
 /* Responsive design cho các thiết bị nhỏ hơn */
 @media (max-width: 768px) {
-    .row:last-child {
-        flex-direction: column;
-        text-align: center;
-    }
+  .row:last-child {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .column.half:last-child {
-        text-align: center;
-        margin-top: 10px;
-    }
+  .column.half:last-child {
+    text-align: center;
+    margin-top: 10px;
+  }
 
-    .button.light-bg {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .button.light-bg {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

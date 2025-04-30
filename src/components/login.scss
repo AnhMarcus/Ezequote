@@ -85,7 +85,7 @@ $transitions: (
 
 // Layout chính
 .login-container {
-  min-height: 100vh;
+  min-height: 89.4vh;
   flex: 1;
   @include flex-center;
   background: linear-gradient(135deg, #74ebd5, #acb6e5);
@@ -204,3 +204,56 @@ $transitions: (
     }
   }
 }
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+
+    .login-card {
+      width: 100%;
+      max-width: 360px;
+      padding: 20px;
+    }
+
+    .login-header h2 {
+      font-size: 22px;
+    }
+
+    .form-group label {
+      font-size: 13px;
+    }
+
+    .form-options {
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .login-btn {
+      font-size: 15px;
+      padding: 12px;
+    }
+
+    .login-footer {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container .login-card {
+    padding: 16px;
+  }
+
+  .login-header h2 {
+    font-size: 20px;
+  }
+
+  .form-group input {
+    font-size: 15px;
+  }
+
+  .forgot-password {
+    font-size: 13px;
+  }
+}
+
