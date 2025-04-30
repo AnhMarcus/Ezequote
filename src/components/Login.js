@@ -58,7 +58,7 @@ const Login = () => {
       }
     );
     if (resData.data.role === "admin") {
-      window.location.pathname = '/admin/announcements'
+      window.location.pathname = '/account/profile'
     } else {
       window.location.pathname = "/";
     }

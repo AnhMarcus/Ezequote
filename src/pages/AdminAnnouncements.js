@@ -98,29 +98,29 @@ const AdminAnnouncements = () => {
 
   return (
     <div className="admin-announcements">
-      <h2>Quản lý thông báo</h2>
+      <h2>Notification Management</h2>
 
       <form onSubmit={handleSubmit} className="announcement-form">
         <input
           type="text"
-          placeholder="Tiêu đề"
+          placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
         />
         <textarea
-          placeholder="Nội dung"
+          placeholder="Content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
           required
         />
-        <button type="submit">{editingId ? "Cập nhật" : "Thêm mới"}</button>
+        <button type="submit">{editingId ? "Update" : "Add New"}</button>
       </form>
 
       <div className="announcement-list">
-        <h3>Danh sách thông báo</h3>
+        <h3>Notification List</h3>
         {announcements.length === 0 ? (
-          <p>Không có thông báo nào.</p>
+          <p>No Notifications.</p>
         ) : (
           <ul>
             {announcements.map((a) => (
@@ -129,8 +129,8 @@ const AdminAnnouncements = () => {
                 <p>{a.content}</p>
                 <small>{new Date(a.createdAt).toLocaleString()}</small>
                 <div className="actions">
-                  <button onClick={() => handleEdit(a)}>Sửa</button>
-                  <button onClick={() => handleDelete(a.id)}>Xoá</button>
+                  <button onClick={() => handleEdit(a)}>Edit</button>
+                  <button onClick={() => handleDelete(a.id)}>Delete</button>
                 </div>
               </li>
             ))}

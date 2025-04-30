@@ -25,16 +25,21 @@ import Address from "./pages/Address";
 import ResetPasswordConfirm from "./components/ResetPasswordConfirm";
 import AdminAnnouncements from "./pages/AdminAnnouncements";
 import ActivityDetail from "./pages/activity/ActivityDetail";
+import GetAllUsers from "./pages/admin/GetAllUsers";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [announcement, setAnnouncement] = useState([]);
   const userloginData = JSON.parse(Cookies.get("userloginData") || "{}");
-  const loginName = userloginData.role === "admin" ? userloginData.firstName || userloginData.lastName || "Admin" : 
-  `${userloginData.firstName || ""} ${userloginData.lastName || ""}`.trim();
+  const loginName =
+    userloginData.role === "admin"
+      ? userloginData.firstName || userloginData.lastName || "Admin"
+      : `${userloginData.firstName || ""} ${
+          userloginData.lastName || ""
+        }`.trim();
   const [scrolled, setScrolled] = useState(false);
-
+  const isAdmin = userloginData.role === "admin";
 
   const fetchAnnouncement = async () => {
     try {
@@ -50,7 +55,7 @@ const App = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50); // nếu scroll xuống quá 50px
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -121,73 +126,101 @@ const App = () => {
             </nav>
           </div>
           <div className="sub_header">
-            <Link to="/"><img src={Ezequote_logo} alt="Ezequote_logo" id="logo" /></Link>
+            <Link to="/">
+              <img src={Ezequote_logo} alt="Ezequote_logo" id="logo" />
+            </Link>
             <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
               <Icon name="bars" />
             </button>
             <nav className={`navigation-menu-bar ${menuOpen ? "open" : ""}`}>
               <ul>
-                <li className="home">
-                  <Link to="/">{data.homePage.home}</Link>
-                </li>
-                <li>
-                  <a href="/ede" target="_blank" rel="noopener noreferrer">{data.homePage.ede}</a>
-                </li>
-                <li>
-                  <a>
-                    <Dropdown className="teams" floating labeled search text="TEAM">
-                      <Dropdown.Menu>
-                        {isLoggedIn ? (renderDropdownItems(teamsOptions)) : (
-                          <Dropdown.Item
-                            disabled
-                            text="Please login to view teams"
-                          />
-                        )}
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <Dropdown className="teams" floating labeled search text="ACTIVITY">
-                      <Dropdown.Menu>
-                        {isLoggedIn ? (activeOptions.map((option) => (<Dropdown.Item key={option.key} as={Link} to={option.value} text={option.text}/>))) : 
-                          (<Dropdown.Item disabled text="Please login to view activities"/>)}
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </a>
-                </li>
-                <li><a>{data.homePage.download}</a></li>
-                <li>
-                  <a href="/tuyendung" rel="noopener noreferrer">{data.homePage.contact}</a>
-                </li>
-                <li>
-                  {isLoggedIn ? (
-                    <Dropdown className="user-dropdown" floating labeled search text={`Hi! ${loginName}`}>
-                      <Dropdown.Menu>
-                        <Dropdown.Item
-                          as={Link}
-                          to="/account/profile"
-                          text="My Account"
-                          icon="user circle"
-                        />
-                        <Dropdown.Item
-                          text="Logout"
-                          icon="sign-out"
-                          onClick={() => {
-                            Cookies.remove("userloginData");
-                            setIsLoggedIn(false);
-                            window.location.href = "/login";
-                          }}
-                        />
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  ) : (
-                    <a href="/login" rel="noopener noreferrer">
-                      LOGIN
-                    </a>
-                  )}
-                </li>
+                {!isAdmin && (
+                  <>
+                    <li className="home">
+                      <Link to="/">{data.homePage.home}</Link>
+                    </li>
+                    <li>
+                      <a href="/ede" target="_blank" rel="noopener noreferrer">
+                        {data.homePage.ede}
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <Dropdown className="teams" floating labeled search text="TEAM">
+                          <Dropdown.Menu>
+                            {isLoggedIn ? (renderDropdownItems(teamsOptions)) : (
+                              <Dropdown.Item disabled text="Please login to view teams"/>
+                            )}
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <Dropdown className="teams" floating labeled search text="ACTIVITY">
+                          <Dropdown.Menu>
+                            {isLoggedIn ? (
+                              activeOptions.map((option) => (
+                                <Dropdown.Item key={option.key} as={Link} to={option.value} text={option.text}/>))) : 
+                                (<Dropdown.Item disabled text="Please login to view activities"/>
+                            )}
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </a>
+                    </li>
+                    <li>
+                      <a>{data.homePage.download}</a>
+                    </li>
+                    <li>
+                      <a href="/tuyendung" rel="noopener noreferrer">
+                        {data.homePage.contact}
+                      </a>
+                    </li>
+                    <li>
+                      {isLoggedIn ? (
+                        <Dropdown className="user-dropdown" floating labeled search text={`Hi! ${loginName}`}>
+                          <Dropdown.Menu>
+                            <Dropdown.Item as={Link} to="/account/profile" text="My Account" icon="user circle"/>
+                            <Dropdown.Item text="Logout" icon="sign-out"
+                              onClick={() => {
+                                Cookies.remove("userloginData");
+                                setIsLoggedIn(false);
+                                window.location.href = "/login";
+                              }}
+                            />
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      ) : (<a href="/login" rel="noopener noreferrer">LOGIN</a>)}
+                    </li>
+                  </>
+                )}
+
+                {isAdmin && (
+                  <>
+                    <li>
+                      <Link to="/admin/announcements">Notification</Link>
+                    </li>
+                    <li>
+                      <Link to="/admin/users">Users</Link>
+                    </li>
+                    <li>
+                      {isLoggedIn ? (
+                        <Dropdown className="user-dropdown" floating labeled search text={`Hi! ${loginName}`}>
+                          <Dropdown.Menu>
+                            <Dropdown.Item as={Link} to="/account/profile" text="My Account" icon="user circle"/>
+                            <Dropdown.Item text="Logout" icon="sign-out"
+                              onClick={() => {
+                                Cookies.remove("userloginData");
+                                setIsLoggedIn(false);
+                                window.location.href = "/login";
+                              }}
+                            />
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      ) : (<a href="/login" rel="noopener noreferrer">LOGIN</a>)}
+                    </li>
+                  </>
+                )}
               </ul>
             </nav>
           </div>
@@ -220,6 +253,7 @@ const App = () => {
             <Route path="password_reset" element={<PasswordReset />} />
             <Route path="/confirm-password-reset" element={<ResetPasswordConfirm />}/>
             <Route path="/admin/announcements" element={<AdminAnnouncements />}/>
+            <Route path="/admin/users" element={<GetAllUsers />}/>
             <Route path="/account" element={<AccountLayout />}>
               <Route path="/account/profile" element={<Profile />} />
               <Route path="/account/change-password" element={<ChangePassword />}/>

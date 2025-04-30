@@ -112,9 +112,45 @@ namespace BE.Controllers
             var users = _context.Users.Select(u => new
             {
                 u.Id,
-                u.email
+                u.email,
+                u.firstName,
+                u.lastName,
+                u.role
             }).ToList();
             return Ok(users);
+        }
+
+        // Delete User
+        [Authorize]
+        [HttpDelete("delete/{id}")]
+        public IActionResult DeleteUser(int id)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Id == id);
+            if (user == null)
+                return NotFound(new { message = "User not found." });
+            _context.Users.Remove(user);
+            _context.SaveChanges();
+
+            return Ok(new { message = "User deleted successfully." });
+        }
+
+        //Edit User
+        [Authorize]
+        [HttpPut("update/{id}")]
+        public IActionResult UpdateUser(int id, [FromBody] UserRegisterDto updatedUser)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Id==id);
+            if (user == null)
+                return NotFound(new { message = "User not found" });
+            user.email = updatedUser.email;
+            if (!string.IsNullOrEmpty(updatedUser.password))
+                user.password = updatedUser.password;
+            user.firstName = updatedUser.firstName;
+            user.lastName = updatedUser.lastName;
+            user.role = updatedUser.role;
+
+            _context.SaveChanges();
+            return Ok(new { message = "User updated successfully", data = user});
         }
 
         // Register -> Lưu vào Database
