@@ -2,6 +2,8 @@ import "../admin/getAllUsers.scss";
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import { Button } from "semantic-ui-react";
+import Unauthorized from "./Unauthorized";
+import { Link } from "react-router-dom";
 
 const GetAllUsers = () => {
   const [users, setUsers] = useState([]);
@@ -20,6 +22,7 @@ const GetAllUsers = () => {
   const fetchUsers = async () => {
     try {
       const userloginData = JSON.parse(Cookies.get("userloginData") || "{}");
+      const isAdmin = userloginData.role === "admin";
       const token = userloginData.token;
       const response = await fetch("https://localhost:7283/api/User/users", {
         method: "GET",
@@ -30,6 +33,11 @@ const GetAllUsers = () => {
 
       if (!response.ok) {
         throw new Error("Không thể fetch users");
+      }
+
+      if (!isAdmin) {
+        window.location.href = "/unauthorized";
+        return null;
       }
 
       const data = await response.json();
@@ -151,7 +159,7 @@ const GetAllUsers = () => {
             />
             <input
               type="password"
-              placeholder="New Password"
+              placeholder="Password"
               value={formData.password}
               onChange={(e) =>
                 setFormData({ ...formData, password: e.target.value })

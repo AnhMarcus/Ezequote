@@ -6,7 +6,7 @@ import WidgetsComponent from "./components/WidgetsComponent";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
 import images from "./data/images";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from "react-router-dom";
 import EdePage from "./components/EdePage";
 import { Dropdown, Icon } from "semantic-ui-react";
 import data from "./data/data.json";
@@ -26,6 +26,7 @@ import ResetPasswordConfirm from "./components/ResetPasswordConfirm";
 import AdminAnnouncements from "./pages/AdminAnnouncements";
 import ActivityDetail from "./pages/activity/ActivityDetail";
 import GetAllUsers from "./pages/admin/GetAllUsers";
+import Unauthorized from "./pages/admin/Unauthorized";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -254,6 +255,7 @@ const App = () => {
             <Route path="/confirm-password-reset" element={<ResetPasswordConfirm />}/>
             <Route path="/admin/announcements" element={<AdminAnnouncements />}/>
             <Route path="/admin/users" element={<GetAllUsers />}/>
+            <Route path="/unauthorized" element={<Unauthorized />}/>
             <Route path="/account" element={<AccountLayout />}>
               <Route path="/account/profile" element={<Profile />} />
               <Route path="/account/change-password" element={<ChangePassword />}/>
